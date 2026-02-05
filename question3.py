@@ -1,0 +1,29 @@
+r = int(input("Enter number of rows: "))
+c = int(input("Enter number of columns: "))
+
+print("Enter elements of first matrix:")
+A = []
+for i in range(r):
+    row = []
+    for j in range(c):
+        row.append(int(input()))
+    A.append(row)
+
+print("Enter elements of second matrix:")
+B = []
+for i in range(r):
+    row = []
+    for j in range(c):
+        row.append(int(input()))
+    B.append(row)
+
+C = []
+for i in range(r):
+    row = []
+    for j in range(c):
+        row.append(A[i][j] + B[i][j])
+    C.append(row)
+
+print("Resultant matrix:")
+for row in C:
+    print(row)
